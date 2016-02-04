@@ -119,6 +119,11 @@ ul{
 #kontakt{
 	margin: 60px 0;
 }
+
+footer ul{
+	padding-left: 0;
+}
+
 footer ul li{
 	display: inline;
 	margin: 0 20px;
