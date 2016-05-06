@@ -1,0 +1,104 @@
+
+header {
+  background: url(../img/anakin.png) no-repeat center/80%;
+  background-size: cover;
+  padding: 0px;
+  height: 400px;
+  width: 1280px;
+  margin: 0px;
+  margin-bottom: 60px;
+}
+
+header h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  color: #222;
+  margin: 0px;
+  padding-top: 250px;
+  padding-left: 200px;
+  line-height: normal;
+}
+
+header span {
+  font-size: 1.7em;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #222;
+  padding-left: 150px;
+  line-height: 1.2em;
+}
+
+.main {
+  max-width: 800px;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+
+.content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content span {
+  font-weight: bold;
+}
+
+.summary, .summary + ul {
+  font-size: 20px;
+}
+
+
+blockquote {
+  font-family: "Abril Fatface", cursive;
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+  text-align: left center;
+  width: 780px;
+  height: auto;
+  padding: 50px 0px 50px 80px;
+  margin: 80px -40px 0 -40px;
+  background-color: #222;
+  background-image: url("../img/quo.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  line-height: 1.2em;
+  font-style: normal;
+  }
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-top: 55px;
+  font-size: 25px;
+}
+
+h3 {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  font-size: 23px;
+}
+
+hr {
+  height: 3px;
+  color: black;
+  background-color: black;
+}
+
+.exp p {
+  margin: 0px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.exp h3 {
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.formal {
+  padding-bottom: 20px;
+}
