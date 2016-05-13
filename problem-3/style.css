@@ -1,0 +1,52 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+
+.top {
+  height: 100px;
+  background: cyan;
+}
+
+.bottom {
+  height: 100px;
+  background: blue;
+}
+
+.box {
+  flex-grow: 1;
+}
+
+.left {
+  background: orange;
+  max-width: 100px;
+}
+
+.mid {
+  position: relative;
+  background: red;
+  margin: 0 20px;
+}
+
+
+.black {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: black;
+  bottom: 20px;
+  right: 20px;
+}
+
+.right {
+  background: purple;
+  max-width: 100px;
+}
