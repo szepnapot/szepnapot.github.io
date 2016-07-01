@@ -21,7 +21,7 @@ function fillThumbnail() {
 function slide(n) {
   var image = document.querySelector('img');
   imageCount += n;
-  image.src = "images/img" + imageCount + '.jpg';
+  image.src = "./images/img" + imageCount + '.jpg';
 }
 
 function slideLeft() { slide(-1) };
