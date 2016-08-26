@@ -30,8 +30,6 @@ a {
    width: 354px;
    height: 354px;
    border-spacing:0;
-   margin-left: -1px;
-   margin-top: -1px;
 }
 
 td {
@@ -62,4 +60,8 @@ td:hover {
 p > a {
   letter-spacing: normal;
   color: olivedrab;
+}
+
+.hidden {
+  display: none;
 }

@@ -2,6 +2,9 @@
 
 let cells = document.querySelectorAll('td');
 let newGame_button = document.querySelector('.newGame').addEventListener('click', newGame);
+let resources_button = document.querySelector('.toggleResources');
+let resources = document.querySelector('#resources');
+resources_button.addEventListener('click', toggleResources);
 
 let board = [
   [null, null, null],
@@ -10,6 +13,10 @@ let board = [
 ]
 
 let myMove = false;
+
+function toggleResources(){
+  resources.classList.toggle('hidden')
+}
 
 function getWinner(board) {
 
