@@ -1,0 +1,74 @@
+@mixin for-tablet-landscape-up {
+  @media (min-width: 1000px) { @content; }
+}
+
+a {
+  text-decoration: none;
+}
+
+#bgLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+button {
+  font-size: 1.3em;
+  padding: 0.5em 0.8em;
+  border-radius: 10%;
+  background: gainsboro;
+}
+
+button:hover {
+  color: white;
+  transition: 0.25s;
+  background: lightgray;
+}
+
+.container {
+  margin: 6% 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#fgLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+footer {
+  margin-top: 10em;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+#pattern {
+  height: 3em;
+}
+
+#wrapper-about {
+  width: 30em;
+
+  @include for-tablet-landscape-up {
+  width: 50em;
+}
+
+}
+
+#wrapper-canvas {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+#wrapper-menu {
+  margin: 3em 0;
+  display: inherit;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 250px;
+}

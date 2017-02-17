@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game of Life, Peter Lodri</title>
+    <link rel="icon" type="image/png" href="glider.png">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  </head>
+  <body>
+  <div class="container">
+    <div id="wrapper-about">
+      <section>
+        <p>The <b>Game of Life</b>, also known simply as <b>Life</b>, is a <a href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular automaton</a> devised by the British mathematician <a href="https://en.wikipedia.org/wiki/John_Horton_Conway">John Horton Conway</a> in 1970.
+  The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced "players", by creating patterns with particular properties.</p>
+      </section>
+      <section>
+        <h2>Rules</h2>
+        <p>The universe of the Game of Life is an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, alive or dead, or "populated" or "unpopulated".</p>
+        <p>Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:</p>
+        <ol>
+          <li>Any live cell with <i>fewer than two live neighbours dies</i>, as if caused by underpopulation.</li>
+          <li>Any live cell with <i>two or three live neighbours lives</i> on to the next generation.</li>
+          <li>Any live cell with <i>more than three live neighbours dies</i>, as if by overpopulation.</li>
+          <li>Any <i>dead cell with exactly three live neighbours becomes a live cell</i>, as if by reproduction.</li>
+        </ol>
+        <p>The initial pattern constitutes the <b>seed</b> of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed—births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a <b>tick</b> (in other words, each generation is a pure function of the preceding one). The rules continue to be applied repeatedly to create further generations.</p>
+      </section>
+    </div>
+    <div id="wrapper-canvas">
+       <canvas id="bgLayer" width="600" height="600"></canvas>
+       <canvas id="fgLayer" width="600" height="600"></canvas>
+    </div>
+    <aside id="wrapper-menu">
+      <button type="button" name="button" id="start">Start</button>
+      <button type="button" name="button" id="end">End</button>
+      <button type="button" name="button" id="clear">Clear</button>
+      <select name="select" id="pattern">
+        <option value="GLIDER">Glider</option>
+        <option value="OSCILLATOR">Random oscillator</option>
+        <option value="SPACESHIP-LIGHT">Light spaceship</option>
+      </select>
+    </aside>
+  </div>
+  <footer>
+    learning project of <a href="https://github.com/szepnapot"><b>Peter Lodri</b></a>
+    <p>Game of Life description from <a href="https://en.wikipedia.org/wiki/Conway's_Game_of_Life">Wikipedia</a></p>
+  </footer>
+  </body>
+  <script type="text/javascript" src="game.js"></script>
+</html>
