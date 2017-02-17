@@ -27,8 +27,9 @@ button:hover {
 }
 
 .container {
-  margin: 6% 0 0 0;
+  margin: 3% 0 0 0;
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -41,7 +42,7 @@ button:hover {
 }
 
 footer {
-  margin-top: 10em;
+  padding-top: 5em;
   vertical-align: bottom;
   text-align: center;
 }
