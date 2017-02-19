@@ -1,0 +1,51 @@
+html {
+  font-size: 10px;
+  background: url("./background-minimal.jpg") center center fixed;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.keys {
+  margin-top: 25rem;
+  margin-left: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.key {
+  transition: all 0.25s ease;
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  font-size: 3rem;
+  text-align: center;
+  background: gray;
+  margin: 1rem;
+  padding: 1.5rem;
+  width: auto;
+  color: white;
+  text-shadow: 0 0 .5rem lightslategrey;
+}
+
+kbd {
+  display: block;
+}
+
+.sound {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: lawngreen;
+}
+
+.playing {
+ transform: scale(1.2);
+ border-color: orange;
+ background: lightgray;
+ color: black;
+}
