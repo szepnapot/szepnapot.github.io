@@ -11,7 +11,8 @@ const SELECTORS = {
   "START" : document.getElementById('start'),
   "END" : document.getElementById('end'),
   "CLEAR" : document.getElementById('clear'),
-  "PATTERN" : document.getElementById('pattern')
+  "PATTERN" : document.getElementById('pattern'),
+  "TICK" : document.getElementById('tick')
 };
 
 const PATTERNS = {
@@ -64,6 +65,8 @@ let fgContext = canvasFg.getContext("2d");
 let gameLoop;
 let map = [];
 let alive_nodes = [];
+let tick = 0;
+
 
 function initBackground(canvas, map, n) {
   BOARD.blockSize = canvas.width / n;
@@ -148,6 +151,7 @@ function fill(event) {
 }
 
 function draw(){
+  SELECTORS.TICK.innerHTML = tick;
   for (let row = 0; row < map.length; row++) {
     for (let cell = 0; cell < map[row].length; cell++) {
       if (map[row][cell] == 1) {
@@ -197,6 +201,7 @@ function game(){
     willDie.forEach((deadCell) => map[deadCell.x][deadCell.y] = 0);
     willBorn.forEach((deadCell) => map[deadCell.x][deadCell.y] = 1);
     draw();
+    tick++;
   }
 
 function resetMap(){
@@ -225,8 +230,6 @@ function start() {
 }
 
 function end() {
-  console.log("game end");
-  console.log(gameLoop);
   window.cancelAnimationFrame(gameLoop);
   window.clearInterval(gameLoop);
   resetMap();
@@ -235,13 +238,16 @@ function end() {
 }
 
 function clearCanvas(){
+  tick = 0;
+  SELECTORS.TICK.innerHTML = tick;
   fgContext.clearRect(0, 0, canvasFg.width, canvasFg.height);
   SELECTORS.START.disabled = false;
 }
 
 function drawPattern() {
+  tick = 0;
+  SELECTORS.TICK.innerHTML = tick;
   let selectedPattern = this.value;
-  console.log(selectedPattern);
   this.value === 'OSCILLATOR' ?
     selectedPattern = PATTERNS.OSCILLATORS[getRandomOscillator()] :
     selectedPattern = PATTERNS[selectedPattern];

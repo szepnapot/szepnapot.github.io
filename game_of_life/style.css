@@ -51,14 +51,22 @@ footer {
   height: 3em;
 }
 
+#tick-label {
+ font-size: 1.2em;
+ margin: 0;
+ position: absolute;
+ bottom: -1.2em;
+ right: 0;
+}
+
 #wrapper-about {
   width: 30em;
 
   @include for-tablet-landscape-up {
   width: 50em;
+  }
 }
 
-}
 
 #wrapper-canvas {
   position: relative;
