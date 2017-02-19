@@ -4,9 +4,9 @@ keys.forEach(k => k.addEventListener('transitionend', removeEffect))
 window.addEventListener("keydown", playSound);
 
 function removeEffect(e) {
-  if (e.propertyName !== 'transform') {
-    return;
-  }
+  // if (e.propertyName !== 'transform') {
+  //   return;
+  // }
   this.classList.remove('playing');
 }
 
