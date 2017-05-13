@@ -1,0 +1,17 @@
+body{
+  margin: 0px auto;
+  overflow-y: hidden;
+}
+#canvas {
+  background: grey;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-info{
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
